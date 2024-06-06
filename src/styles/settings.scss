@@ -1,0 +1,22 @@
+$font-1: "monserrat", sans-serif;
+
+
+
+@font-face {
+    font-family: "monserrat";
+    src: url(../assets/font/Montserrat-Medium.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.content {
+    max-width: 1440 px;
+    margin: auto;
+}

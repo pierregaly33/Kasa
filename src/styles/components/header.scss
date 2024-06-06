@@ -1,0 +1,21 @@
+.navbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+    .navbar {
+        width: 25%;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                font-size: 20px;
+                color: black;
+                font-family: $font-1;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
