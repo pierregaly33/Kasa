@@ -15,6 +15,11 @@ $font-1: "monserrat", sans-serif;
     text-decoration: none;
 }
 
+body {
+    margin: auto;
+    position: relative;
+    min-height: 98vh;
+}
 
 .content {
     max-width: 1440 px;
