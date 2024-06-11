@@ -1,0 +1,31 @@
+.error {
+    display: flex;
+    margin: auto;
+    height: 62vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    row-gap: 80px;
+    img{
+        object-fit: scale-down;
+        height: 250px;
+        width: 600px;
+        display: flex;
+        margin: 0 auto;
+    }
+    h3 {
+        color: $color-1;
+        font-family: $font-1;
+        font-size: 26px;
+    }
+}
+
+.retour-accueil {
+    padding-bottom: 40px;
+    p {
+        font-size: 18px;
+        color: black;
+        text-align: center;
+        text-decoration: underline;
+    }
+}
