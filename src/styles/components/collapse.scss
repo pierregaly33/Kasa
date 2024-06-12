@@ -1,0 +1,54 @@
+.collapse-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .collapse {
+        align-items: center;
+        width: 70%;
+        color: white;
+        margin-bottom: 20px;
+        .collapse-header {
+            background-color: $color-1;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 5px;
+            align-items: center;
+        }
+        .collapse-content {
+            overflow: hidden;
+            padding: 10px;
+            background-color: $color-2;
+            color: $color-1;
+            p{
+                font-size: 15px;
+            }
+        }
+        &.collapsed {
+            .collapse-header {
+                img {
+                    transform: rotate(360deg);
+                    transition: all 500ms;
+                }
+            }
+            .collapse-content {
+                max-height: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                transition: all 500ms;
+            }
+        }
+        &.expended {
+            .collapse-header {
+                img {
+                    transform: rotate(180deg);
+                    transition: all 500ms;
+                }
+            }
+            .collapse-content {
+            max-height: 250px;
+            transition: all 500ms;
+            }
+        }
+    }
+}
