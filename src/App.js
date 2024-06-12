@@ -4,14 +4,16 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Layout from "./components/layout";
 import Error from "./pages/error";
+import Fichelogement from "./pages/ficheLogement";
 
 function App() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
-                    <Route path="/" element={<Home />} />
+                    <Route index element={<Home />} />
                     <Route path="about" element={<About />} />
+                    <Route path="logement/:id" element={<Fichelogement />} />
                     <Route path="*" element={<Error />} />
                 </Route>
             </Routes>
