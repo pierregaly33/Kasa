@@ -39,7 +39,7 @@ function Carousel(props) {
             {props.images.map((image, index) => {
                 return (
                     <div key={index} className={`${carousel === index ? "active" : "inactive"}`}>
-                        <img className="img-carousel" src={image} alt="" />
+                        <img className="img-carousel" src={image} alt="images appartement" />
                     </div>
                 );
             })}
