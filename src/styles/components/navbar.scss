@@ -19,3 +19,25 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .navbar-main {
+        img {
+            width: 145px;
+        }
+        .navbar {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            ul {
+                justify-content: unset;
+                .accueil {
+                    margin-right: 20px;
+                }
+                li {
+                    font-size: 13px;
+                }
+            }
+        }
+    } 
+}

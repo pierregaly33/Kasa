@@ -6,6 +6,7 @@
     margin: 0 5%;
     row-gap: 50px;
     column-gap: 50px;
+    border-radius: 10px;
         .cards {
             height: 255px;
             position: relative;
@@ -42,6 +43,33 @@
                 transition: all 350ms ease-in-out;
                 box-shadow: -1px 1px 9px 7px grey;
                 border-radius: 10px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1240px) {
+        .product-location {
+            article {
+                .cards {
+                    h2 {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .product-location {
+            padding: 20px;
+            grid-template-columns: 1fr;
+            article {
+                width: 100%;
+                &:hover {
+                    .cards {
+                        transform: scale(1.03);
+                    }
+                }
             }
         }
     }

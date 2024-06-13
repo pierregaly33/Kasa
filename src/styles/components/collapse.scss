@@ -18,9 +18,10 @@
             overflow: hidden;
             padding: 10px;
             background-color: $color-2;
-            color: $color-1;
+            color: black;
             p{
                 font-size: 15px;
+                line-height: 1.5;
             }
         }
         &.collapsed {
@@ -58,6 +59,23 @@
         width: 70%;
         .collapse-header {
             border-radius: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about {
+        .collapse {
+            width: 100%;
+            h3 {
+                font-size: 15px;
+            }
+            p {
+                font-size: 13px;
+            }
+            img {
+                width: 26px;
+            }
         }
     }
 }
