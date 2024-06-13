@@ -6,10 +6,15 @@ import Collapse from "../components/collapse";
 import Tags from "../components/tags";
 import Rating from "../components/rating";
 import Host from "../components/host";
+import Error from "../pages/error";
 
 function Fichelogement() {
     let { id } = useParams();
     const logement = Logements.find((logement) => logement.id === id);
+
+    if (!logement) {
+        return <Error />;
+    }
 
     return (
         <>
