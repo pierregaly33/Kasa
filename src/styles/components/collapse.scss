@@ -1,7 +1,6 @@
 .collapse-main {
     display: flex;
     column-gap: 50px;
-    margin: 0 5%;
     .collapse {
         width: 50%;
         color: white;
@@ -55,6 +54,7 @@
 .about {
     flex-direction: column;
     align-items: center;
+    margin: 0 5%;
     .collapse {
         width: 70%;
         .collapse-header {
@@ -64,6 +64,18 @@
 }
 
 @media screen and (max-width: 768px){
+    .collapse-main{
+        flex-direction: column;
+        align-items: center;
+        .collapse {
+            width: 100%;
+        }
+    }
+
+
+
+
+
     .about {
         .collapse {
             width: 100%;

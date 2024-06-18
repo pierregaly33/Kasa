@@ -35,16 +35,16 @@ function Fichelogement() {
                         <Rating rating={logement.rating} />
                     </div>
                 </div>
-            </div>
-            <div className="collapse-main">
-                <Collapse title="Description">
-                    <p>{logement.description}</p>
-                </Collapse>
-                <Collapse title="Équipements">
-                    {logement.equipments.map((equipment, index) => {
-                        return <p key={index}>{equipment}</p>;
-                    })}
-                </Collapse>
+                <div className="collapse-main">
+                    <Collapse title="Description">
+                        <p>{logement.description}</p>
+                    </Collapse>
+                    <Collapse title="Équipements">
+                        {logement.equipments.map((equipment, index) => {
+                            return <p key={index}>{equipment}</p>;
+                        })}
+                    </Collapse>
+                </div>
             </div>
         </>
     );
