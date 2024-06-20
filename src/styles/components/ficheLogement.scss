@@ -65,9 +65,20 @@
     .fiche-logement{
         .fiche-logement-content {
             flex-direction: column;
+            .logement-information  {
+                h2 {
+                    font-size: 22px;
+                }
+                h3 {
+                    font-size: 17px;
+                }
+            }
             .main-tags {
                 flex-wrap: wrap;
                 row-gap: 10px;
+                .tags {
+                    font-size: 15px;
+                }
             }
             .host-and-rate {
                 align-items: unset;
@@ -77,6 +88,9 @@
                     justify-content: unset;
                     align-items: center;
                     width: 100%;
+                    img {
+                        width: 30px;
+                    }
                 }
                 .host {
                     img {
