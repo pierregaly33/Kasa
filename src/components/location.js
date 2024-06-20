@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logement from "../datas/logement.json";
+import Logements from "../datas/logement.json";
 
 function location() {
     return (
         <section className="product-location">
-            {logement.map((logement) => {
+            {Logements.map((logement) => {
                 return (
                     <article key={logement.id}>
                         <NavLink to={`/logement/${logement.id}`}>
